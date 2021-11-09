@@ -4,17 +4,26 @@
     <meta charset="utf-8">
     <title>Pile ou face</title>
     <link rel="stylesheet" href="css/pile.css">
+    <link rel="stylesheet" href="css/glassomorphism.css">
+
+<!--    Import des fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Josefin+Sans&display=swap" rel="stylesheet">
   </head>
   <body onload="initElement()">
 
 
     <h1>Pile ou Face ? </h1>
 
-    <div id="resultat-container">
-      <h2> Le résultat est : </h2>
-    </div>
+    <section id="main">
+      <div id="resultat-container">
+        <h2> Le résultat est : </h2>
+      </div>
+      <button type="button" id="launch">Lancer le test </button>
+    </section>
 
-    <button type="button" id="launch">Lancer le test </button>
+
 
     <script type="text/javascript" src="js/algo.js"></script>
   </body>
