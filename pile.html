@@ -4,11 +4,18 @@
     <meta charset="utf-8">
     <title>Pile ou face</title>
     <link rel="stylesheet" href="css/pile.css">
+    <link rel="stylesheet" href="css/dark_mode.css">
   </head>
-  <body onload="initElement()">
+  <body onload="initElement()" class="dark-mode">
+  <label class="switch">
+    <i class="fas fa-adjust"></i>
+    <div>
+      <input type="checkbox" />
+      <span class="slider round"></span>
+    </div>
+  </label>
 
-
-    <h1>Pile ou Face ? </h1>
+    <h1>Pile ou Face? </h1>
 
     <div id="resultat-container">
       <h2> Le résultat est : </h2>
