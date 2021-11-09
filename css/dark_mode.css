@@ -1,0 +1,79 @@
+:root {
+    --purple: #7400b8ff;
+    --french-violet: #6930c3ff;
+    --slate-blue: #5e60ceff;
+    --tufts-blue: #5390d9ff;
+    --blue-jeans: #4ea8deff;
+    --vivid-sky-blue: #48bfe3ff;
+    --sky-blue-crayola: #56cfe1ff;
+    --medium-turquoise: #64dfdfff;
+    --turquoise: #72efddff;
+    --aquamarine: #80ffdbff;
+
+    --sage: #D2CCA1;
+    --paleSpringBud: #DEDABA;
+    --goldCrayola: #E5C687;
+    --richBlackForeground: #0F1A20;
+    --white: #f8f8f8;
+    --black: #222;
+    --msuGreen: #2D4739;
+    --gray: #eee;
+}
+
+* {
+    transition: background-color 0.6s ease, color 1s ease;
+    color : var(--font);
+}
+
+body {
+    background-color: var(--bodyBG);
+}
+
+.switch {
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.switch div {
+    position: relative;
+    display: block;
+    width: 30px;
+    border-radius: 50px;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.fa-adjust {
+    transform: rotate(180deg);
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #999;
+    transition: 0.4s;
+    border-radius: 34px;
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    position: relative;
+}
+
+input:checked + .slider {
+    transform: translateX(8px);
+}
+
+.light-theme {
+    --bodyBG : var(--slate-blue);
+
+}
+
+.dark-theme {
+    --bodyBG : var(--richBlackForeground);
+    --font : #80ffdbff;
+}
+
