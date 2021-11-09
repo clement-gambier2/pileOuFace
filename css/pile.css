@@ -1,18 +1,45 @@
+/* CSS HEX */
+:root {
+  --purple: #7400b8ff;
+  --french-violet: #6930c3ff;
+  --slate-blue: #5e60ceff;
+  --tufts-blue: #5390d9ff;
+  --blue-jeans: #4ea8deff;
+  --vivid-sky-blue: #48bfe3ff;
+  --sky-blue-crayola: #56cfe1ff;
+  --medium-turquoise: #64dfdfff;
+  --turquoise: #72efddff;
+  --aquamarine: #80ffdbff;
+}
+
 body{
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+
+
+}
+
+h1{
+  font-family: 'Fira Mono', monospace;
+  text-align: center;
+}
+
+#launch{
+  background-color: var(--blue-jeans);
+  border-radius:30px;
+  color:white;
+  padding:10px;
+}
+
+#resultat-container{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-h1{
-  text-align: center;
-}
-
-#launch{
-  background-color: darkblue;
-  border-radius:30px;
-  color:white;
-}
 
 footer{
   display: flex;
