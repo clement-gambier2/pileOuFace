@@ -1,5 +1,5 @@
 :root {
-    --purple: #7400b8ff;
+    --navHeight: 70px;
     --french-violet: #6930c3ff;
     --slate-blue: #5e60ceff;
     --tufts-blue: #5390d9ff;
@@ -63,17 +63,20 @@ body {
     position: relative;
 }
 
+
+
 input:checked + .slider {
     transform: translateX(8px);
 }
 
 .light-theme {
     --bodyBG : var(--slate-blue);
-
+    --inputBG : var(--aquamarine);
 }
 
 .dark-theme {
     --bodyBG : var(--richBlackForeground);
     --font : #80ffdbff;
+    --inputBG: var(--french-violet);
 }
 

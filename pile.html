@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Pile ou face</title>
     <link rel="stylesheet" href="css/pile.css">
+    <link rel="stylesheet" href="css/form.css">
 
     <link rel="stylesheet" href="css/dark_mode.css">
 
@@ -14,14 +15,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Josefin+Sans&display=swap" rel="stylesheet">
     
   </head>
+
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <label class="switch">
+            <i class="fas fa-adjust"></i>
+            <div>
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </div>
+          </label>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
   <body onload="initElement()" class="dark-mode">
-  <label class="switch">
-    <i class="fas fa-adjust"></i>
-    <div>
-      <input type="checkbox" />
-      <span class="slider round"></span>
-    </div>
-  </label>
+
+    <form class="form">
+      <input type="text" id="pile" name="PILE" placeholder="PILE"><br>
+      <input type="text" id="face" name="FACE" placeholder="FACE">
+    </form>
 
     <h1>Pile ou Face? </h1>
 
