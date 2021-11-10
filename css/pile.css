@@ -9,9 +9,11 @@
   --sky-blue-crayola: #56cfe1ff;
   --medium-turquoise: #64dfdfff;
   --turquoise: #72efddff;
-  --aquamarine: #80ffdbff;
+  --aquamarine: #053f2e;
 }
-
+.form {
+  text-align: center;
+}
 body{
   background-color: #5e60ceff;
   font-family: 'Josefin Sans', sans-serif;

@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
+    <script src="https://kit.fontawesome.com/7cb42d20d4.js" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <title>Pile ou face</title>
     <link rel="stylesheet" href="css/pile.css">
     <link rel="stylesheet" href="css/form.css">
 
     <link rel="stylesheet" href="css/dark_mode.css">
+
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/regular.min.js"
+    />
 
     <link rel="stylesheet" href="css/glassomorphism.css">
 <!--    Import des fonts-->
@@ -37,8 +43,16 @@
     <form class="form">
       <input type="text" id="pile" name="PILE" placeholder="PILE"><br>
       <input type="text" id="face" name="FACE" placeholder="FACE">
+
+      <label for="select">Choisis une face</label>
+      <br>
+      <select name="pets" id="select">
+        <option value="pile">Pile</option>
+        <option value="face">Face</option>
+      </select>
     </form>
 
+    <br>
     <h1>Pile ou Face? </h1>
 
     <section id="main">

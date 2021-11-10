@@ -1,5 +1,5 @@
 :root {
-    --navHeight: 70px;
+    --navHeight: 25px;
     --french-violet: #6930c3ff;
     --slate-blue: #5e60ceff;
     --tufts-blue: #5390d9ff;
@@ -18,6 +18,11 @@
     --black: #222;
     --msuGreen: #2D4739;
     --gray: #eee;
+
+    --violet: #7400B8;
+    --violine: #5E60CE;
+    --bleu: #00D4FF;
+
 }
 
 * {
@@ -29,8 +34,9 @@ body {
     background-color: var(--bodyBG);
 }
 
+
 .switch {
-    width: 55px;
+    width: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,10 +45,10 @@ body {
 .switch div {
     position: relative;
     display: block;
-    width: 30px;
+    width: 25px;
     border-radius: 50px;
-    padding: 0 5px;
-    box-sizing: border-box;
+    padding: 0 0;
+    box-sizing: content-box;
 }
 
 .fa-adjust {
@@ -63,20 +69,71 @@ body {
     position: relative;
 }
 
+nav ul {
+    list-style-type: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    height: var(--navHeight);
+    padding: 0 5px;
+}
+
+nav ul li {
+    padding: 5px 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 4px;
+    position: relative;
+}
+
+nav ul li:hover {
+    background-color: var(--french-violet);
+}
+
 
 
 input:checked + .slider {
     transform: translateX(8px);
 }
 
-.light-theme {
-    --bodyBG : var(--slate-blue);
-    --inputBG : var(--aquamarine);
+nav {
+    background: var(--navBg);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    font-size: 1.1rem;
+    position: relative;
 }
 
+html{
+    background-attachment:fixed;
+    height:100%;
+    /*background: rgb(116,0,184);*/
+    background: var(--htmlBG);
+}
+
+
+.light-theme {
+    --themeDropDownBg: var(--goldCrayola);
+    --themeIconBorderColor: var(--sage);
+    --navBg: var(--sage);
+    --navLinkHoverBg: var(--paleSpringBud);
+    --bodyBG : var(--slate-blue);
+    --inputBG : var(--aquamarine);
+    --htmlBG : linear-gradient(145deg, rgba(116,0,184,1) 0%, rgba(94,96,206,1) 35%, rgba(0,212,255,1) 64%,#dfdfff);
+}
+
+
 .dark-theme {
+    --themeDropDownBg: var(--msuGreen);
+    --themeIconBorderColor: var(--richBlackForeground);
+    --navBg: var(--richBlackForeground);
+    --navLinkHoverBg: var(--msuGreen);
     --bodyBG : var(--richBlackForeground);
     --font : #80ffdbff;
     --inputBG: var(--french-violet);
+    --htmlBG: var(--richBlackForeground);
 }
 
